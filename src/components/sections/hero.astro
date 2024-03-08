@@ -1,0 +1,70 @@
+---
+let links = [
+  {
+    Url:"#",
+    Text:"Eventos",
+    TransitionName:"contact"
+  },  
+  {
+    Url:"#",
+    Text:"Servicios",
+    TransitionName:"contact"
+  },
+  {
+    Url:"/contact/",
+    Text:"Contacto",
+    TransitionName:"contact"
+  },
+  {
+    Url:"#",
+    Text:"About Us",
+    TransitionName:"contact"
+  }
+]
+---
+<section class="flex flex-col h-fit w-full">
+  <header role="navigation" class="h-32 backdrop-blur-lg sticky top-0 px-2 lg:px-10 z-50">
+    <div class="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-center lg:justify-normal w-full h-full">
+      <h1 class="font-libre text-3xl font-bold text-orange-950 tracking-tight animate-fade-in-up">Cobros <span class="text-orange-100">Infante</span></h1>
+      <nav class="flex gap-6 font-semibold text-base animate-fade-in-up">
+        {links.map(x => <div><a href={x.Url} class="text-orange-950 transition-colors hover:text-stone-700 text-opacity-45 hover:text-opacity-85" transition:name={x.TransitionName}>{x.Text}</a></div>)}
+      </nav>
+    </div>
+  </header>
+  <section class="w-full h-fit flex flex-col gap-4 lg:grid lg:grid-rows-1 lg:grid-cols-2 lg:gap-x-4 *:p-4 px-2 lg:px-10 animate-fade-in-up delay-1000 -z-10">
+    <!--Clock-->
+    <section>
+      <div class="rounded-b-lg overflow-hidden">
+        <div class="w-full rounded-t-full overflow-hidden">
+          <img src="/img/tingey-injury-law-firm-L4YGuSg0fxs-unsplash.jpg" class="aspect-[2/3] h-[738px] w-full lg:w-[866px]" loading="eager"/>
+        </div>
+      </div>
+    </section>
+    <!--Molter-->
+    <section class="flex items-end">
+      <article class="h-fit w-full flex flex-col justify-between gap-8">
+        <!--Description Page-->
+        <span class="text-yellow-100 font-semibold tracking-wide text-3xl lg:text-5xl text-opacity-95 text-wrap font-libre antialiased">Bienvenido a Cobros Infante tu solución legal en "Santiago República Dominicana"</span>
+        <div class="text-base text-balance leading-relaxed space-y-6 text-orange-950 text-opacity-65 font-libre antialiased">
+          <p>En Cobros Infante, entendemos las dificultades y desafíos que pueden surgir al enfrentarse a cobros compulsivos. Con más de una década de experiencia, nos hemos dedicado a ofrecer servicios legales de alta calidad para ayudar a individuos y empresas a recuperar lo que les pertenece.</p>
+          <p>Bajo la dirección de la experimentada abogada Glenis Infante, nuestro equipo se compromete a brindar soluciones efectivas y éticas para resolver conflictos de cobros en residenciales, protestos de cheques devueltos, transferencias de inmuebles y otros asuntos relacionados con bienes raíces en general.</p>
+        </div>
+        <!--Brand-->
+        <div class="w-full shadow-xl bg-stone-500 bg-opacity-45 h-fit lg:h-60 py-8 lg:p-0 gap-8 lg:gap-0 rounded-lg flex flex-col lg:flex-row justify-around items-center *:flex *:flex-col *:gap-4 *:items-center *:justify-center font-libre">
+          <div>
+            <span class="text-xl text-orange-900 tracking-tight font-semibold">Confiaza</span>
+            <ion-icon name="ribbon" class="text-5xl text-orange-900"></ion-icon>
+          </div>
+          <div>
+            <span class="text-xl text-orange-900 tracking-tight font-semibold">Diligencia y Efectividad</span>
+            <ion-icon name="rocket" class="text-5xl text-orange-900"></ion-icon>
+          </div>
+          <div>
+            <span class="text-xl text-orange-900 tracking-tight font-semibold">Lealtad</span>
+            <ion-icon name="school" class="text-5xl text-orange-900"></ion-icon>
+          </div>
+        </div>
+      </article>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,20 @@
+{
+  "name": "cobrosinfante",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/fira-code": "^5.0.17",
+    "@fontsource/libre-baskerville": "^5.0.12",
+    "@midudev/tailwind-animations": "^0.0.7",
+    "astro": "^4.4.13",
+    "tailwindcss": "^3.4.1"
+  }
+}

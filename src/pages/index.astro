@@ -1,0 +1,33 @@
+---
+import Molter from "../components/articles/molter.astro";
+import MolterLeft from "../components/articles/molterleft.astro";
+import Main from "../layouts/main.astro";
+import Hero from "../components/sections/hero.astro";
+import Questions from "../components/sections/questions.astro";
+---
+<Main Title="Cobros Infante | Home">
+	<section>
+		<Hero/>
+		<main class="mt-20 px-2 lg:px-10">
+			<!--Popular Services-->
+			<section class="space-y-2 lg:space-y-10">
+				<div class="h-24 flex items-center">
+					<h4 class="text-5xl font-bold text-center lg:text-start text-yellow-50 text-opacity-90 w-full">Servicios Populares</h4>
+				</div>
+				<div class="flex flex-col gap-1">
+					<Molter Text="Recupera tu tranquilidad, recupera tus derechos: Cobros Infante, expertos en resolver tus cobros compulsivos." 
+									Title="Cobros Compulsivos" 
+									ImgBrand="/img/sasun-bughdaryan-e11Oa3kvx4c-unsplash.jpg" Url="#"/>
+					<MolterLeft Text="¿Necesitas orientación en asuntos de bienes raíces? Desde contratos de arrendamiento hasta disputas de propiedad, estamos aquí para proteger tus intereses y asegurar transacciones exitosas." 
+											Title="Asesoramiento en Bienes Raíces" 
+											ImgBrand="/img/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg" Url="#"/>
+					<Molter Text="En Cobros Infante, entendemos que cada situación es única. Es por eso que ofrecemos consultoría legal personalizada para abordar tus preocupaciones específicas y encontrar soluciones adaptadas a tus necesidades." 
+									Title="Consultoría Legal Personalizada" 
+									ImgBrand="/img/scott-graham-OQMZwNd3ThU-unsplash.jpg" Url="#"/>
+				</div>
+			</section>
+			<!--Questions-->
+			<Questions/>
+		</main>
+	</section>
+</Main>

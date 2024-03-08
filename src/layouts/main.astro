@@ -1,0 +1,38 @@
+---
+import '@fontsource-variable/fira-code';
+import '@fontsource/libre-baskerville';
+const { Title } = Astro.props;
+import Footer from "../components/sections/footer.astro";
+---
+<html lang="en-mx" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{Title}</title>
+	</head>
+	<body class="tracking-normal font-tock bg-gradient-to-l from-orange-300 to-orange-200">
+		<style>
+			body::-webkit-scrollbar{
+				width: 10px;
+			}
+			body::-webkit-scrollbar-thumb{
+				background-color: rgb(34, 31, 28) ;
+				transition-property: background-color;
+				transition-timing-function: ease-in;
+				transition-duration: 150ms;
+			}
+			body::-webkit-scrollbar-thumb:hover{
+				background-color: #49423d;
+			}
+			body::-webkit-scrollbar-track{
+				background-color: #fdba74;
+			}
+		</style>
+		<slot/>
+		<Footer/>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
