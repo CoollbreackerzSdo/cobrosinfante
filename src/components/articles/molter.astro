@@ -9,8 +9,8 @@ const { Url } = Astro.props;
   <section class="row-start-1 row-end-1 lg:col-start-1 lg:col-end-1 flex items-end">
     <div class="h-full lg:h-4/5 w-full bg-orange-200 flex flex-col lg:pt-10 justify-center items-center gap-8 shadow-lg py-4 lg:py-0">
       <div class="space-y-2 lg:space-y-4 flex flex-col justify-center gap-4">
-        <h4 class="text-center font-bold font-libre text-2xl align-bottom">{Title}</h4>
-        <p class="text-center text-base text-orange-950 text-balance px-2">{Text}</p>
+        <h4 class="text-center font-bold font-libre text-2xl align-bottom text-orange-950">{Title}</h4>
+        <p class="text-center text-base text-orange-950 text-balance px-2 text-opacity-85">{Text}</p>
       </div>
       <a href={Url} class="w-fit h-fit"><span class="h-fit w-fit px-4 py-2 bg-orange-400 transition-colors hover:bg-orange-300 rounded-lg text-orange-50 hover:text-orange-800">Explorar Mas</span></a>
     </div>

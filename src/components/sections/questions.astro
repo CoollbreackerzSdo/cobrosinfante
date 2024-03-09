@@ -1,3 +1,18 @@
-<section class="h-fit lg:h-svh">
-
+---
+import Detail from "../details/genericDetail.astro";
+---
+<section class="h-fit flex flex-col md:flex-row items-center gap-16 p-8 bg-orange-200 rounded-md mt-20 shadow-md overflow-hidden">
+  <section class="md:flex items-center justify-center hidden">
+    <div class="rounded-b-md overflow-hidden">
+      <img src="/img/tingey-injury-law-firm-LJhXYHxPfEY-unsplash.jpg" class="aspect-[2/3] h-[400px] w-[300px] rounded-t-full"/>
+    </div>
+  </section>
+  <section class="w-full h-full flex flex-col gap-8 self-start">
+    <h4 class="font-bold font-libre text-4xl text-balance tracking-wide leading-1 text-orange-950">Cuales son las preguntas que nuestros clientes hacen al buscar nustros servicios</h4>
+    <div class="flex flex-col gap-6 justify-center h-full w-full">
+      <Detail Title="Que tiempo toma un divorcio?" Text="Depende del tipo de divorcio, y el cúmulo de trabajo que haya en el tribunal,  pero podría tomar de 2 a 6 meses"/>
+      <Detail Title="Cuanto es el costo de un divorcio ?" Text="Depende del tipo de divorcio"/>
+      <Detail Title="La esposa hereda la totalidad o una parte de los bienes de la comunidad?" Text="Si hubo hijos el 50% ella lo hereda y el otro 50% corresponde a los hijos y si no hubo hijos entran a la sucesión los padres, hermanos del finado"/>
+    </div>
+  </section>
 </section>

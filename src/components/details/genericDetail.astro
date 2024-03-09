@@ -1,0 +1,9 @@
+---
+const { Text } = Astro.props;
+const { Title } = Astro.props;
+---
+
+<details class="w-full h-fit">
+  <summary class="font-semibold text-lg text-balance text-orange-900 cursor-pointer hover:text-opacity-65 transition-all">{Title}</summary>
+  <p class="text-balance text-orange-900 font-medium text-opacity-85 text-base">{Text}</p>
+</details>
