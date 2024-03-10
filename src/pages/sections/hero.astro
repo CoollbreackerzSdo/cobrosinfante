@@ -1,0 +1,57 @@
+---
+let links = [
+  {
+    Url:"#",
+    Text:"Servicios",
+    TransitionName:"contact"
+  },
+  {
+    Url:"/contact/",
+    Text:"Contacto",
+    TransitionName:"contact"
+  },
+  {
+    Url:"#",
+    Text:"About Us",
+    TransitionName:"contact"
+  }
+]
+---
+<section class="flex flex-col gap-8 lg:gap-20 h-fit w-full bg-gradient-to-r from-slate-700 to-stone-700">
+  <header role="navigation" class="h-24 lg:h-32 backdrop-blur-lg sticky top-0 px-2 lg:px-20 z-50">
+    <div class="flex flex-col lg:flex-row gap-4 lg:gap-10 items-center justify-center lg:justify-normal w-full h-full">
+      <h1 class="font-libre text-3xl font-bold text-zinc-50 tracking-tight animate-fade-in-up">Cobros <span class="text-raw-umber">Infante</span></h1>
+      <nav class="flex gap-6 font-semibold text-base animate-fade-in-up">
+        {links.map(x => <div><a href={x.Url} class="text-zinc-50 transition-colors hover:text-blue-300 text-opacity-45 hover:text-opacity-85" transition:name={x.TransitionName}>{x.Text}</a></div>)}
+      </nav>
+    </div>
+  </header>
+  <section class="grid lg:grid-cols-2 lg:grid-rows-1 gap-y-8 lg:gap-y-0 px-2 lg:px-20 h-fit py-10">
+    <div class="space-y-4">
+      <h1 class="text-5xl font-libre text-balance text-zinc-50 antialiased text-left animate-fade-in-up">Tu Invaluable Solucion Para Todos Tus Casos Legales</h1>
+      <p class="text-zinc-50 font-libre font-medium text-base text-opacity-80 antialiased text-left sm:max-w-[600px] animate-fade-in-up">Con más de una década de experiencia, nos hemos dedicado a ofrecer servicios legales de alta calidad para ayudar a individuos y empresas a recuperar lo que les pertenece.</p>
+      <div class="flex flex-col lg:flex-row items-start lg:items-center gap-8 pt-8">
+        <a href="#" class="flex gap-2 items-center text-base font-libre bg-raw-umber transition-colors hover:bg-gray-500 px-5 py-2 w-fit h-fit rounded-full text-zinc-50 antialiased animate-fade-in-up">Hacer una consultar
+          <div class="rounded-full bg-antiflash-white h-fit w-fit flex items-center justify-center">
+            <ion-icon name="navigate" class="h-4 w-4 m-2 text-raw-umber"></ion-icon>
+          </div>
+        </a>
+        <div class="lg:flex items-center gap-2 hidden animate-fade-in-up">
+          <ion-icon name="call-outline" class="text-4xl font-medium text-raw-umber"></ion-icon>
+          <p class="flex flex-col gap-1 font-libre antialiased text-zinc-50 tracking-wider">
+            <a href="tel:+18298129122" class="underline text-sm tracking-normal transition-colors hover:text-blue-300">LLamar Ahora</a>
+            <span class="normal-nums">(829) 812-9122</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex gap-0 lg:gap-2 justify-center items-center">
+      <div class="lg:h-96 bg-gradient-to-r from-stone-500 to-slate-500 animate-fade-in-up">
+        <img src="/img/tingey-injury-law-firm-LJhXYHxPfEY-unsplash.jpg" class="lg:h-96 aspect-[2/3]"/>
+      </div>
+      <div class="lg:h-96 relative -top-16 hidden lg:inline-flex bg-gradient-to-r from-stone-500 to-slate-500 animate-fade-in-up">
+        <img src="/img/tingey-injury-law-firm-L4YGuSg0fxs-unsplash.jpg" class="lg:h-96 aspect-[2/3]"/>
+      </div>
+    </div>
+  </section>
+</section>
