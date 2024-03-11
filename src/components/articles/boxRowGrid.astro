@@ -4,11 +4,11 @@ const { Title } = Astro.props;
 const { Text } = Astro.props;
 const { Src } = Astro.props;
 ---
-<div class="space-x-32 flex items-center">
+<div class="space-y-10 lg:space-y-0 space-x-0 lg:space-x-32 flex flex-col lg:flex-row h-full items-center">
   <p class="normal-nums font-semibold text-xl text-zinc-50"><span class="p-4 rounded-full bg-raw-umber">{Number}</span></p>
-  <section class="text-balance space-y-2">
-    <p class="text-slate-950 font-bold font-libre text-xl text-start">{Title}</p>
-    <p class="text-slate-950 font-libre font-light text-opacity-80 text-base text-start">{Text}</p>
+  <section class="text-balance space-y-2 w-full">
+    <p class="text-slate-950 font-bold font-libre text-xl text-center lg:text-start">{Title}</p>
+    <p class="text-slate-950 font-libre font-light text-opacity-80 text-base text-center lg:text-start">{Text}</p>
   </section>
 </div>
-<img src={Src} class="aspect-[12/6] h-[120px] rounded-md" loading="lazy"/>
+<img src={Src} class="aspect-[12/6] h-[120px] rounded-lg" loading="lazy"/>
