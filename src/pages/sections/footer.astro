@@ -1,7 +1,7 @@
-<footer class="h-fit bg-gradient-to-r from-slate-700 to-stone-700">
-  <div class="h-96 px-2 md:px-20 pt-8 space-y-10">
+<footer class="h-fit bg-gradient-to-r from-slate-700 to-stone-700 flex flex-col gap-8">
+  <div class="h-fit md:h-96 px-2 md:px-20 pt-8 flex flex-col gap-8">
     <!--Second nav-->
-    <nav class="shadow-md backdrop-blur-md rounded-md flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center py-8 px-10">
+    <nav class="border-none md:border-solid border-2 border-zinc-50 rounded-xl flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center py-8 px-10">
       <a class="font-libre text-3xl font-bold text-zinc-50 tracking-tight">Cobros <span class="text-orange-400">Infante</span></a>
       <div class="flex items-center gap-2">
         <p class="text-lg font-semibold font-libre antialiased tracking-wide text-zinc-50 text-opacity-60">Síguenos en:</p>
@@ -13,12 +13,20 @@
       </div>
     </nav>
     <!--Links-->
-    <section class="grid grid-cols-1 md:grid-cols-4 grid-rows-4 md:grid-rows-1 px-10">
-      <div>
+    <section class="grid grid-cols-1 md:grid-cols-4 grid-rows-4 md:grid-rows-1 px-2 md:px-10 h-fit">
+      <div class="flex flex-col gap-6">
         <div class="space-y-4">
           <p class="text-xl font-semibold font-libre tracking-wide text-orange-300">Enlaces Rápidos</p>
           <div class="h-1 bg-orange-500 w-2/3"><div class="h-full bg-white w-8"></div></div>
         </div>
+        <nav>
+          <ol class="space-y-4">
+            <li class="text-zinc-50 text-opacity-70">-  <a href="/" class="font-semibold tracking-wide font-libre transition-all hover:text-blue-300 hover:text-opacity-100 active:text-blue-100 text-lg">Inicio</a></li>
+            <li class="text-zinc-50 text-opacity-70">-  <a href="/services/" class="font-semibold tracking-wide font-libre transition-all hover:text-blue-300 hover:text-opacity-100 active:text-blue-100 text-lg">Servicios</a></li>
+            <li class="text-zinc-50 text-opacity-70">-  <a href="/contact/" class="font-semibold tracking-wide font-libre transition-all hover:text-blue-300 hover:text-opacity-100 active:text-blue-100 text-lg">Contacto</a></li>
+            <li class="text-zinc-50 text-opacity-70">-  <a href="/about-us/" class="font-semibold tracking-wide font-libre transition-all hover:text-blue-300 hover:text-opacity-100 active:text-blue-100 text-lg">About Us</a></li>
+          </ol>
+        </nav>
       </div>
       <div>
         <div class="space-y-4">

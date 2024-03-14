@@ -1,0 +1,20 @@
+---
+const { Url } = Astro.props;
+const { Img } = Astro.props;
+const { Text } = Astro.props;
+const { Title } = Astro.props;
+---
+<div class="bg-gradient-to-l from-slate-700 to-slate-900 overflow-hidden shadow-lg h-fit w-fit rounded-lg animate-reveal">
+  <div class="max-w-sm">
+    <img class="w-[400px] h-[300px] aspect-[4/3]" src={Img} alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2 font-libre text-orange-300 tracking-wide">{Title}</div>
+      <p class="text-base text-zinc-50 text-opacity-80 font-libre">
+        {Text}
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2">
+      <slot/>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,7 @@
 import '@fontsource-variable/fira-code';
 const { Title } = Astro.props;
 import Footer from "../pages/sections/footer.astro";
+import { ViewTransitions } from 'astro:transitions';
 ---
 <html lang="en-mx" class="scroll-smooth">
 	<head>
@@ -9,26 +10,11 @@ import Footer from "../pages/sections/footer.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="/css/app.css">
 		<title>{Title}</title>
+		<ViewTransitions />
 	</head>
 	<body class="tracking-normal font-tock bg-antiflash-white">
-		<style>
-			body::-webkit-scrollbar{
-				width: 10px;
-			}
-			body::-webkit-scrollbar-thumb{
-				background-color: #696969 ;
-				transition-property: background-color;
-				transition-timing-function: ease-in;
-				transition-duration: 150ms;
-			}
-			body::-webkit-scrollbar-thumb:hover{
-				background-color: #888888;
-			}
-			body::-webkit-scrollbar-track{
-				background-color: #44403c;
-			}
-		</style>
 		<slot/>
 		<Footer/>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

@@ -1,0 +1,43 @@
+---
+import Main from "../layouts/main.astro";
+import ServicesCard from "../components/cards/serviceCard.astro";
+---
+<Main Title="Servicios">
+  <div class="h-fit bg-gradient-to-r from-slate-700 to-stone-700"
+    <header class="border-solid border-b-2 border-zinc-950 flex flex-col gap-2">
+      <!--Nav-->
+      <div class="h-40 flex gap-2 items-center px-2 lg:px-20 justify-start animate-fade-in-up delay-1000"
+        <nav>
+          <a href="/" class="flex items-center text-zinc-50 text-opacity-60 text-base font-bold tracking-wide transition-all hover:text-opacity-100 active:text-blue-300 hover:text-blue-200 gap-2">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            Atras
+          </a>
+        </nav>
+        <p class="font-bold text-base font-libre tracking-wide text-zinc-50 text-opacity-60">/</p>
+        <h1 transition:name="services" class="tracking-wide font-bold text-base text-orange-400 content-center">Servicios</h>
+      </div>
+    </header>
+    <main class="px-2 lg:px-20 columns-1 sm:columns-2 md:columns-3 w-full gap-x-4 *:mb-4 animate-fade-in-up">
+      <ServicesCard Img="/img/services/romain-dancre-doplSDELX7E-unsplash.jpg" Title="Asesoramiento Legal en Temas de Bienes Raíces" Url="#">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#LegalAssistance</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#EscriturasInmobiliarias</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#BienesRaíces</span>
+      </ServicesCard>
+      <ServicesCard Img="/img/services/romain-dancre-doplSDELX7E-unsplash.jpg" Title="Determinación de Herederos" Url="#" Text="Nuestro equipo legal está altamente capacitado para asistir a los clientes en el proceso de determinación de herederos, un procedimiento crucial en la sucesión de bienes. Nos aseguramos de que este proceso se lleve a cabo de manera precisa y eficiente, garantizando la validez y legalidad de la transferencia de patrimonio.">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#LegalAssistance</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#EscriturasInmobiliarias</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#BienesRaíces</span>
+      </ServicesCard>
+      <ServicesCard Img="/img/services/romain-dancre-doplSDELX7E-unsplash.jpg" Title="Divorcios por Mutuo Consentimiento y por Incompatibilidad" Url="#" Text="Entendemos que los procedimientos de divorcio pueden ser emocionalmente desafiantes y legalmente complejos. Ofrecemos representación legal comprensiva y empática en los procesos de divorcio, ya sea por mutuo consentimiento o por incompatibilidad, buscando resolver los asuntos de manera justa y equitativa para todas las partes involucradas.">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#LegalAssistance</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#EscriturasInmobiliarias</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#BienesRaíces</span>
+      </ServicesCard>
+      <ServicesCard Img="/img/services/romain-dancre-doplSDELX7E-unsplash.jpg" Title="Elaboración de Asambleas en Residenciales" Url="#" Text="Como parte de nuestros servicios especializados para comunidades residenciales, ofrecemos asesoramiento y elaboración de asambleas, asegurando que los procesos de toma de decisiones dentro de las comunidades sean transparentes, eficientes y estén en conformidad con las normativas legales vigentes.">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#LegalAssistance</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#EscriturasInmobiliarias</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-900 mr-2 mb-2">#BienesRaíces</span>
+      </ServicesCard>
+    </main>
+  </div>
+</Main>
