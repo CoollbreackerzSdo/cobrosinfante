@@ -14,7 +14,10 @@ import { ViewTransitions } from 'astro:transitions';
 		<title>{Title}</title>
 		<ViewTransitions />
 	</head>
-	<body class="tracking-normal font-tock bg-gradient-to-l from-slate-950 to-stone-950">
+	<body class="tracking-normal font-tock bg-antiflash-white">
 		<slot/>
+		<Footer/>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	</body>
 </html>
