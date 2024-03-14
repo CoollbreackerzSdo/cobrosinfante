@@ -1,73 +1,18 @@
 ---
 import Main from "../layouts/main.astro";
-import Hero from "./sections/hero.astro";
-import Qualities from "./sections/qualities.astro";
-import BoxRowGrid from "../components/articles/boxRowGrid.astro";
-import AboutClient from "./sections/aboutClient.astro";
-import Legal from "../components/icons/legal.astro";
-import Juerge from "../components/icons/juerge.astro";
-import Breack from "../components/icons/breack.astro";
 ---
 <Main Title="Cobros Infante | Home">
-	<div>
-		<Hero/>
-		<main class="mt-20 space-y-40">
-			<!--Types Services-->
-			<section class="px-2 lg:px-10">
-				<section class="space-y-16">
-					<div class="md:grid md:grid-cols-3 md:gridmd-rows-1">
-						<p class="text-raw-umber text-4xl text-wrap text-start font-semibold font-libre">El área donde nuestra ley es proactiva.</p>
-					</div>
-					<div class="grid grid-cols-1 md:grid-cols-3 grid-rows-[repeat(3,auto)] md:grid-rows-1 gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-4 text-zinc-950">
-						<div class="space-y-2">
-							<Legal/>
-							<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Bienes Raíces</h5>
-							<p class="text-balance text-sm font-medium text-justify sm:text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Asesoramiento legal integral en todos los aspectos relacionados con bienes raíces, desde transacciones comerciales hasta disputas legales.</p>
-						</div>
-						<div class="space-y-2">
-							<Breack/>
-							<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Elaboración de Asambleas en Residenciales</h5>
-							<p class="text-balance text-sm font-medium text-justify sm:text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Como parte de nuestros servicios especializados para comunidades residenciales, ofrecemos asesoramiento y elaboración de asambleas, asegurando que los procesos de toma de decisiones dentro de las comunidades sean transparentes, eficientes y estén en conformidad con las normativas legales vigentes.</p>
-						</div>
-						<div class="space-y-2">
-							<Juerge/>
-							<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Determinación de Herederos</h5>
-							<p class="text-balance text-sm font-medium text-justify sm:text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Nuestro equipo legal está altamente capacitado para asistir a los clientes en el proceso de determinación de herederos, un procedimiento crucial en la sucesión de bienes. Nos aseguramos de que este proceso se lleve a cabo de manera precisa y eficiente, garantizando la validez y legalidad de la transferencia de patrimonio.</p>
-						</div>
-					</div>
-				</section>
-				<section>
-
-				</section>
-			</section>
-			<!--Questions-->
-			<Qualities/> 
-			<!--Best Services-->
-			<section class="px-2 lg:px-10 space-y-32 py-10">
-				<h2 class="align-baseline text-center text-6xl font-bold font-libre text-zinc-600"><span class="text-zinc-950">Mejores</span> Servicios</h2>
-				<section class="flex flex-col gap-10 lg:gap-0 lg:grid lg:grid-rows-3 lg:grid-cols-1 lg:divide-dashed lg:divide-y-2 lg:divide-zinc-400 *:h-fit *:lg:h-32 *:flex *:justify-center *:items-center *:lg:justify-between *:flex-col *:lg:flex-row *:gap-4 *:lg:gap-0">
-					<div>
-						<BoxRowGrid Number="01" 
-												Src="img/home/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg"
-												Title="Asesoramiento legal en temas de bienes raíces." 
-												Text="En Cobros Infante, entendemos que las transacciones inmobiliarias pueden ser complejas y llenas de desafíos legales. Nuestro servicio de asesoramiento legal en temas de bienes raíces está diseñado para brindarte la orientación experta que necesitas para tomar decisiones informadas y proteger tus intereses en todo momento."/>
-					</div>
-					<div>
-						<BoxRowGrid Number="02" 
-												Src="img/home/sasun-bughdaryan-e11Oa3kvx4c-unsplash.jpg"
-												Title="Consultoría sobre Contratos Financieros y Acuerdos de Pago"
-												Text="Nuestro servicio de consultoría está diseñado para proporcionarte la orientación experta que necesitas para comprender y negociar términos y condiciones equitativos que protejan tus intereses."/>
-					</div>
-					<div>
-						<BoxRowGrid Number="03"
-												Src="img/home/scott-graham-OQMZwNd3ThU-unsplash.jpg"
-												Title="Representación Legal en Procedimientos de Cierre de Transacciones y Transferencia de Propiedad"
-												Text="Nuestro equipo legal está dedicado a proporcionarte la representación experta que necesitas para garantizar un cierre fluido y exitoso."/>
-					</div>
-				</section>
-			</section>
-			<!--Reseña-->
-			<AboutClient/>
-		</main>
-	</div>
+	<main class="h-svh flex justify-center items-center">
+    <div class="terminal-loader">
+      <div class="terminal-header">
+      <div class="terminal-title">Status</div>
+      <div class="terminal-controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
+    </div>
+    <div class="text">On Construction...</div>
+  </div>
+  </main>
 </Main>
