@@ -4,12 +4,12 @@ const { Img } = Astro.props;
 const { Text } = Astro.props;
 const { Title } = Astro.props;
 ---
-<div class="bg-gradient-to-l from-slate-700 to-slate-900 overflow-hidden shadow-lg h-fit w-fit rounded-lg animate-reveal">
+<div class="overflow-hidden shadow-xl border-solid border-2 border-zinc-400 backdrop-blur-md h-fit w-fit rounded-lg animate-reveal">
   <div class="max-w-sm">
     <img class="w-[400px] h-[300px] aspect-[4/3]" src={Img} alt="Sunset in the mountains">
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2 font-libre text-orange-300 tracking-wide">{Title}</div>
-      <p class="text-base text-zinc-50 text-opacity-80 font-libre">
+      <div class="font-bold text-xl mb-2 font-libre text-orange-200 tracking-wide antialiased">{Title}</div>
+      <p class="text-base text-zinc-50 text-opacity-80 font-libre antialiased tracking-wider">
         {Text}
       </p>
     </div>
