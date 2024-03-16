@@ -13,43 +13,15 @@ let models = [
     new ListModel("Divorcios",['Divorcios por mutuo consentimiento','Divorcios por incompatibilidad','Asesoramiento y redacción de acuerdos de divorcio','Representación legal en procedimientos de divorcio litigioso.']),
     new ListModel("Determinación de Herederos",['Investigación de la sucesión y los derechos hereditarios.','Representación en procesos de determinación de herederos.','Resolución de disputas relacionadas con la herencia.'])
   ]),
-  new Areas("",[
-    new ListModel("",[]),
-    new ListModel("",[]),
-    new ListModel("",[])
+  new Areas("Derecho Inmobiliario",[
+    new ListModel("Asesoramiento Legal en Bienes Raíces",['Revisión y redacción de contratos de arrendamiento y compraventa.','Resolución de disputas de propiedad.','Asesoramiento en materia de regulaciones y normativas inmobiliarias.']),
+    new ListModel("Elaboración de Asambleas en Residenciales",['Facilitación de reuniones y deliberaciones comunitarias.','Preparación de documentos legales para asambleas de propietarios.','Asesoramiento sobre procedimientos de votación y toma de decisiones.']),
+  ]),
+  new Areas("Otros Servicios",[
+    new ListModel("Asesoramiento Legal en Derecho Laboral",['Representación en casos de despidos injustificados.','Asistencia en la redacción de contratos laborales.','Defensa de los derechos de los empleados en casos de discriminación o acoso laboral.']),
+    new ListModel("Asesoramiento Legal en Derecho Comercial",['Asistencia en la constitución de sociedades comerciales.','Resolución de disputas entre socios comerciales.','Redacción de contratos comerciales.']),
+    new ListModel("Asesoramiento Legal en Derecho Penal",['Defensa en casos penales relacionados con deudas o fraudes financieros.','Asesoramiento sobre derechos legales en investigaciones criminales.'])
   ])
-]
-let areas = [
-  {
-    Title:"Derecho Inmobiliario",
-    Services:[
-      {
-        Title:"Asesoramiento Legal en Bienes Raíces:",
-        Sections:['Revisión y redacción de contratos de arrendamiento y compraventa.','Resolución de disputas de propiedad.','Asesoramiento en materia de regulaciones y normativas inmobiliarias.']
-      },
-      {
-        Title:"Elaboración de Asambleas en Residenciales",
-        Sections:['Facilitación de reuniones y deliberaciones comunitarias.','Preparación de documentos legales para asambleas de propietarios.','Asesoramiento sobre procedimientos de votación y toma de decisiones.']
-      },
-    ]
-  },
-  {
-    Title:"Otros Servicios",
-    Services:[
-      {
-        Title:"Asesoramiento Legal en Derecho Laboral",
-        Sections:['Representación en casos de despidos injustificados.','Asistencia en la redacción de contratos laborales.','Defensa de los derechos de los empleados en casos de discriminación o acoso laboral.']
-      },
-      {
-        Title:"Asesoramiento Legal en Derecho Comercial",
-        Sections:['Asistencia en la constitución de sociedades comerciales.','Resolución de disputas entre socios comerciales.','Redacción de contratos comerciales.']
-      },
-      {
-        Title:"Asesoramiento Legal en Derecho Penal",
-        Sections:['Defensa en casos penales relacionados con deudas o fraudes financieros.','Asesoramiento sobre derechos legales en investigaciones criminales.']
-      },
-    ]
-  },
 ]
 ---
 <Main Title="Servicios">
@@ -71,7 +43,7 @@ let areas = [
       {
         models.map(x => 
           <div class="space-y-8 h-fit">
-            <h3 class="text-4xl text-zinc-950 text-opacity-70 font-libre tracking-wide font-bold ml-8">{x.Title}</h3>
+            <h3 class="text-4xl text-zinc-950 text-opacity-70 font-libre tracking-wide font-bold">{x.Title}</h3>
             <section class="flex p-8 justify-start flex-col md:flex-row w-full rounded-md shadow-xl h-fit gap-8 border-2 border-none md:border-solid border-zinc-800 border-opacity-30">
               {x.Services.map(j => 
                 <div class="flex w-fit flex-col gap-4">
