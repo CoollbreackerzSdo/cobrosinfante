@@ -1,4 +1,5 @@
 ---
+import MainHeader from "../components/headers/mainHeader.astro";
 import Main from "../layouts/main.astro";
 import Areas from "../models/Areas";
 import ListModel from "../models/ListModel";
@@ -8,54 +9,34 @@ let models = [
     new ListModel("Cobros Compulsivos",['Gestión de cobros de deudas vencidas.','Negociación de acuerdos de pago.','Recuperación de deudas mediante acciones legales.']),
     new ListModel("Protesto de Cheques Devueltos",['Representación legal en procesos de protesto de cheques.','Recuperación de fondos de cheques devueltos.','Asesoramiento sobre los derechos y responsabilidades relacionados con cheques devueltos.']),
     new ListModel("Transferencia de Inmuebles",['Representación en el cierre de transacciones inmobiliarias.','Realización de la debida diligencia legal.','Elaboración y revisión de contratos de compraventa.','Asistencia en la compra y venta de propiedades.'])
-  ]),
+  ],"derecho-civil-comercial",""),
   new Areas("Derecho de Familia",[
     new ListModel("Divorcios",['Divorcios por mutuo consentimiento','Divorcios por incompatibilidad','Asesoramiento y redacción de acuerdos de divorcio','Representación legal en procedimientos de divorcio litigioso.']),
     new ListModel("Determinación de Herederos",['Investigación de la sucesión y los derechos hereditarios.','Representación en procesos de determinación de herederos.','Resolución de disputas relacionadas con la herencia.'])
-  ]),
+  ],"derecho-de-familia",""),
   new Areas("Derecho Inmobiliario",[
     new ListModel("Asesoramiento Legal en Bienes Raíces",['Revisión y redacción de contratos de arrendamiento y compraventa.','Resolución de disputas de propiedad.','Asesoramiento en materia de regulaciones y normativas inmobiliarias.']),
     new ListModel("Elaboración de Asambleas en Residenciales",['Facilitación de reuniones y deliberaciones comunitarias.','Preparación de documentos legales para asambleas de propietarios.','Asesoramiento sobre procedimientos de votación y toma de decisiones.']),
-  ]),
+  ],"derecho-inmobiliario",""),
   new Areas("Otros Servicios",[
     new ListModel("Asesoramiento Legal en Derecho Laboral",['Representación en casos de despidos injustificados.','Asistencia en la redacción de contratos laborales.','Defensa de los derechos de los empleados en casos de discriminación o acoso laboral.']),
     new ListModel("Asesoramiento Legal en Derecho Comercial",['Asistencia en la constitución de sociedades comerciales.','Resolución de disputas entre socios comerciales.','Redacción de contratos comerciales.']),
     new ListModel("Asesoramiento Legal en Derecho Penal",['Defensa en casos penales relacionados con deudas o fraudes financieros.','Asesoramiento sobre derechos legales en investigaciones criminales.'])
-  ])
+  ],"otros-servicios","")
 ]
 ---
-<Main Title="Servicios">
-  <div class="h-fit"
-    <header class="border-solid border-b-2 border-zinc-950 flex flex-col gap-2">
-      <!--Nav-->
-      <div class="h-40 flex gap-2 items-center px-2 lg:px-20 justify-start animate-fade-in-up delay-1000 ml-4 md:ml-0">
-        <nav>
-          <a href="/" class="flex group/back items-center text-zinc-950 text-opacity-60 text-base font-bold tracking-wide transition-all hover:text-opacity-100 active:text-blue-400 hover:text-blue-300 gap-1">
-            <ion-icon name="arrow-back-outline" class="transition-transform ease-in duration-200 group-hover/back:-translate-x-1"></ion-icon>
-            Atras
-          </a>
-        </nav>
-        <p class="font-bold text-base font-libre tracking-wide text-zinc-950 text-opacity-60">/</p>
-        <h1 transition:name="services" class="tracking-wide font-bold text-2xl text-orange-400 content-center font-libre">Areas Practicas</h>
-      </div>
+<Main Title="Cobros Infante | Servicios">
+  <div class="h-fit static top-0 bg-gradient-to-r from-slate-700 to-stone-700">
+    <header class="flex flex-col gap-2">
+      <MainHeader/>
     </header>
     <main class="px-2 lg:px-20 flex flex-col w-full gap-x-4 *:mb-4 animate-fade-in-up space-y-10">
       {
         models.map(x => 
-          <div class="space-y-8 h-fit">
-            <h3 class="text-4xl text-zinc-950 text-opacity-70 font-libre tracking-wide font-bold">{x.Title}</h3>
-            <section class="flex p-8 justify-start flex-col md:flex-row w-full rounded-md shadow-xl h-fit gap-8 border-2 border-none md:border-solid border-zinc-800 border-opacity-30">
-              {x.Services.map(j => 
-                <div class="flex w-fit flex-col gap-4">
-                  <span class="text-orange-400 font-libre font-bold tracking-wide text-xl">{j.Title}</span>
-                  <ol class="list-disc space-y-4">
-                    {j.Sections.map(z => <li class="text-balance text-zinc-950 font-libre font-normal">{z}</li>)}
-                  </ol>
-                </div>
-                )
-              }
-            </section>
-          </div>
+          <article>
+            <div class="absolute -top-20"id={x.Tag.toString()}></div>
+            <h5 class="text-center font-libre text-4xl">{x.Title}</h5>
+          </article>
         )
       }
     </main>

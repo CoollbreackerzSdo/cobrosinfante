@@ -2,65 +2,51 @@
 import Main from "../layouts/main.astro";
 import Hero from "./sections/hero.astro";
 import Qualities from "./sections/qualities.astro";
-import BoxRowGrid from "../components/articles/boxRowGrid.astro";
 import AboutClient from "./sections/aboutClient.astro";
-import Legal from "../components/icons/legal.astro";
-import Juerge from "../components/icons/juerge.astro";
-import Breack from "../components/icons/breack.astro";
+import CoinIcon from "../components/icons/coin.astro";
+import AuditIcon from "../components/icons/audit.astro";
+import State from "../components/icons/state.astro";
 ---
 <Main Title="Cobros Infante | Home">
 	<div>
 		<Hero/>
-		<main class="mt-20 space-y-40">
-			<!--Types Services-->
-			<section class="space-y-16 px-2 lg:px-10">
-				<div class="md:grid md:grid-cols-3 md:gridmd-rows-1">
-					<p class="text-raw-umber text-4xl text-wrap text-start font-semibold font-libre">El área donde nuestra ley es proactiva.</p>
-				</div>
-				<div class="grid grid-cols-1 md:grid-cols-3 grid-rows-[repeat(3,auto)] md:grid-rows-1 gap-y-8 md:gap-y-0 gap-x-0 md:gap-x-4 text-zinc-950">
-					<div class="space-y-2">
-						<Legal/>
-						<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Bienes Raíces</h5>
-						<p class="text-balance text-sm font-medium text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Asesoramiento legal integral en todos los aspectos relacionados con bienes raíces, desde transacciones comerciales hasta disputas legales.</p>
-					</div>
-					<div class="space-y-2">
-						<Breack/>
-						<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Elaboración de Asambleas en Residenciales</h5>
-						<p class="text-balance text-sm font-medium text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Como parte de nuestros servicios especializados para comunidades residenciales, ofrecemos asesoramiento y elaboración de asambleas, asegurando que los procesos de toma de decisiones dentro de las comunidades sean transparentes, eficientes y estén en conformidad con las normativas legales vigentes.</p>
-					</div>
-					<div class="space-y-2">
-						<Juerge/>
-						<h5 class="font-semibold font-libre text-lg tracking-wide text-start text-zinc-950">Determinación de Herederos</h5>
-						<p class="text-balance text-sm font-medium text-start font-libre leading-relaxed text-zinc-950 text-opacity-80">Nuestro equipo legal está altamente capacitado para asistir a los clientes en el proceso de determinación de herederos, un procedimiento crucial en la sucesión de bienes. Nos aseguramos de que este proceso se lleve a cabo de manera precisa y eficiente, garantizando la validez y legalidad de la transferencia de patrimonio.</p>
-					</div>
-				</div>
-			</section>
-			<!--Questions-->
-			<Qualities/> 
+		<main class="space-y-40 font-libre">
 			<!--Best Services-->
-			<section class="px-2 lg:px-10 space-y-32 py-10">
-				<h2 class="align-baseline text-center text-6xl font-bold font-libre text-zinc-600"><span class="text-zinc-950">Mejores</span> Servicios</h2>
-				<section class="flex flex-col gap-10 lg:gap-0 lg:grid lg:grid-rows-3 lg:grid-cols-1 lg:divide-dashed lg:divide-y-2 lg:divide-zinc-400 *:h-fit *:lg:h-32 *:flex *:justify-center *:items-center *:lg:justify-between *:flex-col *:lg:flex-row *:gap-4 *:lg:gap-0">
-					<div>
-						<BoxRowGrid Number="01" 
-												Src="img/home/francesca-tosolini-tHkJAMcO3QE-unsplash.jpg"
-												Title="Asesoramiento legal en temas de bienes raíces." 
-												Text="En Cobros Infante, entendemos que las transacciones inmobiliarias pueden ser complejas y llenas de desafíos legales. Nuestro servicio de asesoramiento legal en temas de bienes raíces está diseñado para brindarte la orientación experta que necesitas para tomar decisiones informadas y proteger tus intereses en todo momento."/>
+			<section class="px-2 lg:px-10">
+				<section class="mt-10 sm:mt-40">
+					<div class="space-y-8">
+						<h3 class="text-3xl md:text-7xl text-orange-400 font-bold text-center uppercase text-balance animate-reveal">Nuestros Servicios<br/> Mas Proactivos</h3>
+						<p class="text-center font-medium text-base md:text-xl leading-snug text-zinc-600 text-opacity-90 animate-reveal">Nos enorgullece ofrecer una gama de servicios legales proactivos diseñados para anticipar y abordar las necesidades legales de nuestros clientes de manera eficiente y efectiva.<span class="hidden md:inline">Nuestro enfoque proactivo se centra en identificar y resolver problemas potenciales antes de que se conviertan en conflictos mayores, brindando a nuestros clientes tranquilidad y seguridad en sus asuntos legales.</span></p>
 					</div>
-					<div>
-						<BoxRowGrid Number="02" 
-												Src="img/home/sasun-bughdaryan-e11Oa3kvx4c-unsplash.jpg"
-												Title="Consultoría sobre Contratos Financieros y Acuerdos de Pago"
-												Text="Nuestro servicio de consultoría está diseñado para proporcionarte la orientación experta que necesitas para comprender y negociar términos y condiciones equitativos que protejan tus intereses."/>
-					</div>
-					<div>
-						<BoxRowGrid Number="03"
-												Src="img/home/scott-graham-OQMZwNd3ThU-unsplash.jpg"
-												Title="Representación Legal en Procedimientos de Cierre de Transacciones y Transferencia de Propiedad"
-												Text="Nuestro equipo legal está dedicado a proporcionarte la representación experta que necesitas para garantizar un cierre fluido y exitoso."/>
-					</div>
+					<section class="mt-20 flex justify-center items-center w-full">
+						<div class="columns-1 md:columns-3 *:border-2 *:border-solid *:border-zinc-600 *:border-opacity-80 *:h-fit *:md:h-96 *:w-full *:md:w-96 space-y-4 md:space-y-0 *:p-4 *:flex *:flex-col *:justify-around *:items-start">
+							<article class="sm:hidden lg:inline-flex animate-reveal">
+								<CoinIcon/>
+								<div class="space-y-3">
+									<span class="text-2xl uppercase font-bold text-zinc-800 mb-4">Planificación Patrimonial y Sucesoria</span>
+									<p class="text-base font-normal leading-snug text-start text-balance text-zinc-700 text-opacity-90">Proteger su patrimonio y el bienestar de sus seres queridos mediante la elaboración de testamentos, fideicomisos y otros instrumentos legales que aseguren una transferencia de patrimonio sin problemas y conforme a sus deseos.</p>
+								</div>
+							</article>
+							<article class="animate-reveal">
+								<AuditIcon/>
+								<div class="space-y-3">
+									<span class="text-2xl font-bold text-zinc-800 uppercase mb-4">Auditoría Legal Preventiva</span>
+									<p class="text-base font-normal leading-snug text-start text-balance text-zinc-700 text-opacity-90">Realizamos auditorías legales exhaustivas para identificar posibles áreas de riesgo y vulnerabilidad en las operaciones comerciales de nuestros clientes, proporcionando recomendaciones y soluciones preventivas para mitigar riesgos legales.</p>
+								</div>
+							</article>
+							<article class="animate-reveal">
+								<State/>
+								<div class="space-y-3">
+									<span class="text-2xl font-bold text-zinc-800 mb-4 uppercase">Monitoreo de Cambios Legales</span>
+									<p class="text-base font-normal leading-snug text-start text-balance text-zinc-700 text-opacity-90">Estamos atentos a los cambios en la legislación y las regulaciones relevantes para nuestros clientes, manteniéndolos informados sobre nuevas leyes y requisitos legales que puedan afectar sus operaciones comerciales y personales.</p>
+								</div>
+							</article>
+						</div>
+					</section>
 				</section>
 			</section>
+			<!--Questions-->
+			<Qualities/>
 			<!--Reseña-->
 			<AboutClient/>
 		</main>
