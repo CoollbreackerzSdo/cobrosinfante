@@ -1,5 +1,6 @@
 ---
 import MainHeader from "../../components/headers/mainHeader.astro";
+import PhoneWhite from "../../components/icons/phoneWhite.astro";
 ---
 <section class="flex flex-col gap-8 lg:gap-20 h-fit w-full bg-gradient-to-r from-slate-700 to-stone-700">
   <MainHeader/>
@@ -8,13 +9,13 @@ import MainHeader from "../../components/headers/mainHeader.astro";
       <h1 class="text-5xl font-libre text-balance text-zinc-50 antialiased text-start">Tu Invaluable Solución Para Todos Tus Casos Legales</h1>
       <p class="text-zinc-50 font-libre font-medium text-base text-opacity-80 antialiased text-start sm:max-w-[500px] leading-none">Con más de una década de experiencia, nos hemos comprometido a brindar servicios legales de alta calidad para ayudar a individuos y empresas a recuperar lo que les corresponde.</p>
       <div class="flex flex-col lg:flex-row items-start lg:items-center gap-8 pt-8">
-        <a href="#" class="flex gap-2 items-center text-base font-libre bg-raw-umber transition-colors hover:bg-gray-500 px-5 py-2 w-fit h-fit rounded-full text-zinc-50 antialiased animate-fade-in-up">Hacer una consultar
+        <a href="#" class="flex gap-2 items-center text-base font-libre bg-orange-500 transition-colors hover:bg-orange-700 active:bg-orange-200 px-5 py-2 w-fit h-fit rounded-full text-zinc-50 antialiased animate-fade-in-up">Hacer una consultar
           <div class="rounded-full bg-antiflash-white h-fit w-fit flex items-center justify-center">
-            <ion-icon name="paper-plane" class="h-4 w-4 m-2 text-raw-umber"></ion-icon>
+            <ion-icon name="paper-plane" class="h-4 w-4 m-2 text-orange-500"></ion-icon>
           </div>
         </a>
         <div class="lg:flex items-center gap-2 hidden">
-          <ion-icon name="call-outline" class="text-4xl font-medium text-raw-umber"></ion-icon>
+          <PhoneWhite/>
           <p class="flex flex-col gap-1 font-libre antialiased text-zinc-50 tracking-wider">
             <a href="tel:+18298129122" class="underline text-sm tracking-normal transition-colors hover:text-blue-300">LLamar Ahora</a>
             <span class="normal-nums">+1(829) 812-9122</span>

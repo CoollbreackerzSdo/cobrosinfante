@@ -9,12 +9,8 @@ let links = [
     Text:"Areas Practicas",
   },
   {
-    Url:"#",
+    Url:"/eventos",
     Text:"Eventos",
-  },
-  {
-    Url:"/contacto",
-    Text:"Contacto",
   },
   {
     Url:"/about-us",
@@ -32,6 +28,6 @@ let links = [
     <nav class="z-10 bg-gradient-to-r md:bg-none from-slate-700 to-stone-700 border-solid md:border-none border-b-2 border-transparent flex flex-col md:flex-row items-center justify-center md:justify-start gap-8 md:gap-6 font-semibold text-base absolute md:static top-20 md:top-auto right-0 md:right-auto overflow-hidden px-2 md:px-0 transition-all h-0 md:h-fit w-full md:w-fit peer-has-[:checked]:h-80 peer-has-[:checked]:py-10 peer-has-[:checked]:border-zinc-50">
       {links.map(x => <div><a href={x.Url} class="text-zinc-50 transition-colors hover:text-orange-300 active:text-orange-200 md:text-opacity-45 md:hover:text-opacity-85">{x.Text}</a></div>)}
     </nav>
-    <a href="#" class="px-7 py-2 hidden md:inline-flex transition-colors ease-in font-bold bg-zinc-200 border-2 border-solid border-zinc-200 hover:bg-stone-700 rounded-full text-zinc-800 hover:text-orange-300 active:text-orange-200">Contactenos</a>
+    <a href="/contacto" class="px-7 py-2 hidden md:inline-flex transition-colors ease-in font-bold bg-zinc-200 border-2 border-solid border-zinc-200 hover:bg-stone-700 rounded-full text-zinc-800 hover:text-orange-300 active:text-orange-200">Contactenos</a>
   </div>
 </header>

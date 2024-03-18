@@ -36,6 +36,14 @@ let models = [
           <article>
             <div class="absolute -top-20"id={x.Tag.toString()}></div>
             <h5 class="text-center font-libre text-4xl">{x.Title}</h5>
+            <p>{x.Description}</p>
+            <section>
+              <div>
+                {x.Services.map(j => 
+                  
+                )}
+              </div>
+            </section>
           </article>
         )
       }
